@@ -1,0 +1,11 @@
+<!doctype html>
+<html>
+  <head>
+    <script type="text/javascript">
+      const currentUrl = new URL(window.location.href);
+      currentUrl.pathname = currentUrl.pathname.replace('/connection/data-source', '');
+      window.location.href = currentUrl.toString();
+    </script>
+  </head>
+  <body></body>
+</html>
